@@ -1,0 +1,20 @@
+{
+  "retrieval_cache": "MemSyco_Experiment/retrieval/Mem0/retrieved_official_memzero_top10.jsonl",
+  "checks": [
+    {
+      "method": "baseline",
+      "outputs": 1550,
+      "judged": 1550,
+      "output_ids_match_retrieval_prefix": true,
+      "judge_ids_match_output_prefix": true
+    },
+    {
+      "method": "M6",
+      "outputs": 1550,
+      "judged": 1550,
+      "output_ids_match_retrieval_prefix": true,
+      "judge_ids_match_output_prefix": true
+    }
+  ],
+  "errors": []
+}

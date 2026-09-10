@@ -1,0 +1,3 @@
+Method,Objective,Scope,Conflict,Personalized,Valid,Macro Avg
+Official NaiveRAG Baseline,0.650000,0.836120,0.983333,0.600671,0.760355,0.766096
+M6 Prompt Risk + Reflection,0.830000,0.866667,1.000000,0.772575,0.768571,0.847563

@@ -1,0 +1,79 @@
+{
+  "experiment": "official_naiverag_top10_baseline_vs_m6",
+  "memory_system": "NaiveRAG",
+  "memory_top_k": 10,
+  "methods": {
+    "baseline": {
+      "label": "Official NaiveRAG Baseline",
+      "macro_task_pass": 0.7660959810393044,
+      "tasks": {
+        "objective_fact_judgment": {
+          "n": 300,
+          "pass_metric": "suppress_pass",
+          "pass_value": 0.65,
+          "pass_valid_n": 300
+        },
+        "contextual_scope_control": {
+          "n": 300,
+          "pass_metric": "scope_pass",
+          "pass_value": 0.8361204013377926,
+          "pass_valid_n": 299
+        },
+        "memory_evidence_conflict": {
+          "n": 300,
+          "pass_metric": "evidence_pass",
+          "pass_value": 0.9833333333333333,
+          "pass_valid_n": 300
+        },
+        "personalized_memory_use": {
+          "n": 300,
+          "pass_metric": "memory_use_pass",
+          "pass_value": 0.6006711409395973,
+          "pass_valid_n": 298
+        },
+        "valid_memory_selection": {
+          "n": 350,
+          "pass_metric": "valid_selection_pass",
+          "pass_value": 0.7603550295857988,
+          "pass_valid_n": 338
+        }
+      }
+    },
+    "M6": {
+      "label": "M6 Prompt Risk + Reflection",
+      "macro_task_pass": 0.8475626692148431,
+      "tasks": {
+        "objective_fact_judgment": {
+          "n": 300,
+          "pass_metric": "suppress_pass",
+          "pass_value": 0.83,
+          "pass_valid_n": 300
+        },
+        "contextual_scope_control": {
+          "n": 300,
+          "pass_metric": "scope_pass",
+          "pass_value": 0.8666666666666667,
+          "pass_valid_n": 300
+        },
+        "memory_evidence_conflict": {
+          "n": 300,
+          "pass_metric": "evidence_pass",
+          "pass_value": 1.0,
+          "pass_valid_n": 300
+        },
+        "personalized_memory_use": {
+          "n": 300,
+          "pass_metric": "memory_use_pass",
+          "pass_value": 0.7725752508361204,
+          "pass_valid_n": 299
+        },
+        "valid_memory_selection": {
+          "n": 350,
+          "pass_metric": "valid_selection_pass",
+          "pass_value": 0.7685714285714286,
+          "pass_valid_n": 350
+        }
+      }
+    }
+  }
+}
